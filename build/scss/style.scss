@@ -1,0 +1,1427 @@
+
+/*general*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #58805a;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    padding: 20px 24px;
+    // box-shadow: rgba(0 0 0 / 20%) 0px 2px 4px -1px, rgba(0 0 0 / 14%) 0px 4px 5px 0px, rgba(0 0 0 / 12%) 0px 1px 10px 0px;
+
+
+.header_wrapper{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
+
+.mobile_version {
+    position: fixed;
+    right: -1925px;
+    top: 0px;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    background: #000000;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.5s;
+}
+.mobile_version_wrapper {
+    overflow: auto;
+    height: 550px;
+}
+
+    .header_logo_link {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        & span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 30px;
+            color: #ffffff;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+    }
+    .mobile_header_logo_link{
+        display: none;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+    }
+    .header_logo_link img {
+        width: 87px;
+        height: 65px;
+        margin-right: 15px;
+    }
+
+    .mobile_header_logo_link img {
+        width: 87px;
+        height: 65px;
+    }
+
+    .header_btn {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-style: normal;
+        color: #fff;
+        background: #000;
+        padding: 12px 16px;
+       border-radius: 4px;
+       border: none;
+       margin-right: 50px;
+       transition: all 0.2s ease-in-out;
+       cursor: pointer;
+       outline: none;
+       &:hover{
+           letter-spacing: 3px;
+       }
+    }
+
+    .hamburger-menu-line {
+        background: #ffffff;
+        height: 3px;
+        width: 32px;
+        transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+        transform: none;
+        margin: 6px 0;
+        display: block;
+    }
+
+
+    .header_btn_hamburger_menu_wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile_version_header_btn_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .mobile_version_close {
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        & .material-icons{
+            font-size: 48px;
+            color: #ffffff;
+        }
+    }
+
+    .header_nav_ul_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .header_ul_link { 
+        text-transform: uppercase;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            letter-spacing: 3px;
+        }
+    }
+
+    .header_ul_li{
+        padding-bottom: 32px;
+        list-style: none;
+    }
+
+    .header_social_links_wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 260px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    
+    .header_social_link img {
+        width: 55px;
+        height: 45px;
+    }
+
+    .header_social_link{   
+       margin: 0 auto;
+       margin-right: 5px;
+       margin-left: 5px;
+       cursor: pointer;
+       outline: none;
+    }
+}
+
+
+  /*main*/
+
+    /*top*/
+
+    .top{
+        background-image: url("../images/welcome-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .top_wrapper_first{
+            background-image: linear-gradient(rgba(131, 58, 180, 0) 0%, rgba(253, 29, 29, 0) 70%, rgb(21, 13, 41) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .top_wrapper{
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
+            padding-top: 150px;
+        }
+        .top_main_img{
+            max-width: 400px;
+            width: 100%;
+            height: 400px;
+
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .top_main_images_wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .top_img2{
+          position: absolute;
+          right: 2px;
+          top: 173px;   
+           width: 100%;
+           max-width: 400px;
+           height: 250px;
+         & img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+        }
+       }
+   
+      .top_img3 {
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+        position: absolute;
+        top: 100px;
+
+        & img{
+            width: 100%;
+        }
+      }
+      .top_img4 {
+        width: 100%;
+        max-width: 400px;
+        position: absolute;
+        top: 100px;
+        & img{
+            width: 100%;
+        }
+     }
+     .top_title{
+        font-family: 'Montserrat', sans-serif;
+         font-weight: 800;
+         font-style: normal;
+         font-size: 30px;
+         color: #ffffff;
+         text-transform: uppercase;
+         text-align: center;
+         margin-bottom: 20px;
+     }
+     .top_btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-125px,90px);
+        text-transform: uppercase;
+        padding: 20px 16px;
+        width: 80%;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: #000;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            letter-spacing: 3px;
+        }
+      }
+      .top_info_box_wrapper {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0.875rem;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+     .top_info_box{
+        box-sizing: border-box;
+        margin: 0px;
+        flex-basis: 25%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 25%;
+        width: 25%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     .top_info_box:not(:last-child){
+         border-right: 1px solid hsla(0, 0%, 100%, 0.5);
+     }
+      .top_info_box_num{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        color: #ffffff;
+        letter-spacing: 2px;
+        
+      }
+      .top_info_box_text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #cdcdcd;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+     }
+    }
+
+
+.fan_ape_club_body{
+    width: 100%;
+    background: #150d29;
+    position: relative;
+    top: -1px;
+    .fan_ape_club_body_wrapper{
+        width: 100%;
+    }
+    #mySwiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+      .swiper-pagination-bullet{
+          width: 12px;
+          height: 12px;
+          cursor: pointer;
+      }
+      .swiper-pagination-bullet-active{
+        background-color: #58805a;
+      }
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        border: 5px solid hsla(0,0%,100%,.5);
+        border-radius: 50px;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    .about_fan_ape_club_wrapper{
+        width: 100%;
+        max-width: 1152px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+    .about_fan_ape_club_img {
+        width: 100%;
+        max-width: 576px;
+        height: 576px;
+        margin: 0 auto;
+        -webkit-mask: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0, hsla(0, 0%, 100%, 0) 0, #020202 30%);
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .about_fan_ape_club_title {   
+        text-transform: uppercase;
+        margin: 3% 0;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .about_fan_ape_club_info {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 30px;
+        & span{
+            font-weight: bold!important;
+        }
+    }
+    .about_fan_ape_club_welcome_words_wrapper{
+        margin-bottom: 50px;
+    }
+    .roadmap_fan_ape_club_wrapper{
+        width: 100%;
+        max-width: 1152px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+    .roadmap_fan_ape_club_title {
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 120px;
+        font-style: normal;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    .roadmap_fan_ape_club_info_line_wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    .roadmap_fan_ape_club_line_rounds_wrapper {
+        margin-right: 50px;
+
+    }
+    .roadmap_fan_ape_club_line_round {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        left: 0;
+        height: 100%;
+    }
+    .roadmap_fan_ape_club_line {
+        background: rgb(88, 128, 90);
+        width: 5px;
+        height: 100%;
+    }
+     .roadmap_fan_ape_club_round {
+        background: #58805a;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 1;
+        left: -12px;
+        top: 0;
+       
+        
+    }
+
+    
+    .roadmap_fan_ape_club_info_box_title {    
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 25px;
+        margin: 10px 0;
+        color: #ffffff;
+    }
+    .roadmap_fan_ape_club_info_box_text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin: 20px 0;
+        color: #ffffff;
+    }
+    .roadmap_fan_ape_club_info_box {
+        padding-bottom: 100px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding-left: 50px;
+    }
+    .development_roadmap_wrapper{
+        width: 100%;
+        max-width: 1152px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+    .development_roadmap_title {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 120px;
+    }
+    .development_roadmap_info1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 45px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 40px;
+    }
+    .development_roadmap_item {
+        border-bottom: 1px solid rgb(224, 224, 224);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+    .development_roadmap_item_info {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: 25px;
+        color: #ffffff;
+        text-align: right;
+        width: 100%;
+        max-width: 846px;
+        
+    }
+    .development_roadmap_item_title {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 25px;
+        width: 22%;
+        color: #ffffff;
+    }
+    .faqs_wrapper{
+        width: 100%;
+        max-width: 1152px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+    }
+        .faqs_title{
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 120px;
+            font-style: normal;
+            text-align: center;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .faqs_item {
+            background-color: #58805a;
+            border-radius: 25px;
+            width: 100%;
+            max-width: 1152px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            padding: 20px 16px;
+            transition: all 0.5s;
+            // height: 78px;
+            // overflow: hidden;
+        }
+        .faqs_item_icon svg{
+             width: 24px;
+             height: 24px;
+        }
+        .faqs_item_icon{
+            cursor: pointer;
+        }
+        .faqs_item_title_icon_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faqs_item_info {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 25px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #ffffff;
+            line-height: 34px;
+            margin: 25px 0;
+            display: none;
+        }
+        .faqs_item_title {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 25px;
+            font-style: normal;
+            color: #ffffff;
+        }
+        .faqs_item.open .faqs_item_icon svg{
+            transform: rotate(180deg);
+        }
+       .team_wrapper{
+           width: 100%;
+           max-width: 1152px;
+           margin: 0 auto;
+           padding-bottom: 150px;
+       }
+       .team_title{
+        margin-bottom: 3%;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 120px;
+        font-style: normal;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+       }
+       .team_persons_info_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .team_person_info {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .team_person_img {
+        border: 5px solid #58805a;
+        border-radius: 65px;
+        width: 249px;
+        height: 249px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }    
+
+    .team_person_name {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 30px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 38px; 
+        margin: 5px 14px;
+    }
+    .team_person_position {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 25px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 36px;
+    }
+}
+    
+// #round1{
+//      top: 0;
+//      left: -12px;
+// }
+
+// #round2{
+//     transform: translate(-15px, -39px);
+// }
+
+// #round3{
+//     transform: translate(-15px, 47px);
+// }
+
+// #round4{
+//     transform: translate(-15px, 64px);
+// }
+
+// #round5{
+//     transform: translate(-15px, 75px);
+// }
+body.hidden_body{
+    overflow: hidden;
+}
+
+
+
+/*footer*/
+.footer {
+    background-color: #58805a;
+    padding: 10% 0;
+    width: 100%;
+    position: relative;
+    top: -1px;
+    .footer_wrapper{
+        width: 100%;
+        max-width: 686px;
+        margin: 0 auto;
+    }
+    .footer_social_link{
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        outline: none;
+      & img {
+        width: 55px;
+        height: 45px;
+     } 
+
+   }
+   .footer_logo_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    white-space: nowrap;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    & img{
+        margin-bottom: 15px;
+    }
+  }
+  .footer_info {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    word-break: break-word;
+  }
+  .footer_social_links_wrapper {
+    width: 260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+ }
+
+}
+
+
+
+/*media*/
+
+@media (max-width: 768px){
+    .mobile_version{
+        max-width: unset!important;
+    }
+    .footer_wrapper{
+        max-width: unset!important;
+        width: 90%!important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 626px) and (max-width: 768px){
+    .header_logo_link span{
+        font-size: 25px!important;
+    }
+    .header_btn{
+        margin-right: 20px!important;
+    }
+    .footer_info{
+        font-size: 22px!important;
+        margin-bottom: 35px!important;
+    }
+    
+
+
+}
+
+
+
+@media (min-width: 801px) and (max-width: 1050px){
+    .development_roadmap_title{
+        font-size: 90px!important;
+      }
+      .roadmap_fan_ape_club_title{
+        font-size: 90px!important;
+      }
+      .faqs_title{
+        font-size: 90px!important;
+      }
+      .team_title{
+        font-size: 90px!important;     
+      }
+}
+
+
+@media (min-width: 716px) and (max-width: 800px){
+    .development_roadmap_title{
+        font-size: 80px!important;
+      }
+      .roadmap_fan_ape_club_title{
+        font-size: 80px!important;
+      }
+      .faqs_title{
+        font-size: 80px!important;
+      }
+      .team_title{
+        font-size: 80px!important;     
+      }
+}
+
+@media (min-width: 628px) and   (max-width: 716px){
+    .development_roadmap_title{
+        font-size: 70px!important;
+      }
+      .roadmap_fan_ape_club_title{
+        font-size: 70px!important;
+      }
+      .faqs_title{
+        font-size: 70px!important;
+      }
+      .team_title{
+        font-size: 70px!important;     
+      }
+}
+
+
+@media  (min-width: 456px) and   (max-width: 627px){
+    .development_roadmap_title{
+        font-size: 50px!important;
+      }
+      .roadmap_fan_ape_club_title{
+        font-size: 50px!important;
+      }
+      .faqs_title{
+        font-size: 50px!important;
+      }
+      .team_title{
+        font-size: 50px!important;     
+      }
+}
+
+@media  (min-width: 369px) and  (max-width: 455px){
+    .development_roadmap_title{
+        font-size: 40px!important;
+        margin-bottom: 30px!important;
+      }
+      .roadmap_fan_ape_club_title{
+        font-size: 40px!important;
+        margin-bottom: 30px!important;
+      }
+      .faqs_title{
+        font-size: 40px!important;
+        margin-bottom: 30px!important;
+      }
+      .team_title{
+        font-size: 40px!important;
+        margin-bottom: 30px!important;  
+      }
+}
+
+
+@media   (max-width: 368px){
+    .development_roadmap_title{
+        font-size: 32px!important;
+        margin-bottom: 30px!important;
+      }
+      .roadmap_fan_ape_club_title{
+        font-size: 32px!important;
+        margin-bottom: 30px!important;
+      }
+      .faqs_title{
+        font-size: 32px!important;
+        margin-bottom: 30px!important;
+      }
+      .team_title{
+        font-size: 32px!important;
+        margin-bottom: 30px!important;  
+      }
+}
+
+
+
+
+@media (min-width: 426px) and (max-width: 625px){
+    .header_logo_link span{
+        display: none!important;
+    }
+    .footer_info{
+        font-size: 18px!important;
+        margin-bottom: 30px!important;
+    }
+    .header_btn{
+        margin-right: 15px!important;
+        padding: 12px!important;
+        font-size: 18px!important;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .about_fan_ape_club_wrapper{
+        padding-bottom: 80px!important;
+    }
+    .roadmap_fan_ape_club_wrapper{
+        padding-bottom: 80px!important;
+    }
+    .development_roadmap_wrapper{
+        padding-bottom: 80px!important;
+    }
+    .faqs_wrapper{
+        padding-bottom: 80px!important;
+    }
+    .team_wrapper{
+        padding-bottom: 80px!important;
+    }
+}
+
+@media  (max-width: 425px){
+    .team_person_position{
+        font-size: 18px!important;
+    }
+    .team_person_name{
+        font-size: 20px!important;
+        margin: unset!important;
+    }
+    .roadmap_fan_ape_club_round {
+        width: 25px!important;
+        height: 25px!important;
+        left: -9px!important;
+        top: 0;
+    }
+    .faqs_item{
+        border-radius: 10px!important;
+    }
+    .team_person_img{
+        border-radius: 10px!important;
+    }
+    
+    .development_roadmap_item_info{
+        font-size: 16px!important;
+      }
+    .development_roadmap_info1{
+        font-size: 18px!important;
+        margin-bottom: 30px!important;
+        line-height: unset!important;
+    }
+    .development_roadmap_item_title{
+        font-size: 20px!important;
+        margin-bottom: 20px!important;
+    }
+    .roadmap_fan_ape_club_info_box{
+        padding-left: 30px!important;
+    }
+    
+      .roadmap_fan_ape_club_info_box_title{
+          font-size: 20px!important;
+      }
+      .roadmap_fan_ape_club_info_box_text{
+          font-size: 18px!important;
+      }
+    .about_fan_ape_club_wrapper{
+        padding-bottom: 50px!important;
+    }
+    .team_wrapper{
+        padding-bottom: 50px!important;
+    }
+    .roadmap_fan_ape_club_wrapper{
+        padding-bottom: 50px!important;
+    }
+    .development_roadmap_wrapper{
+        padding-bottom: 50px!important;
+    }
+    .faqs_wrapper{
+        padding-bottom: 50px!important;
+    }
+    .about_fan_ape_club_img{
+        height: unset!important;
+    }
+    .footer_info{
+        font-size: 16px!important;
+        margin-bottom: 25px!important;
+    }
+    .header_logo_link span{
+        display: none!important;
+    }
+    .header_btn{
+        display: none!important;
+    }
+    .mobile_header_logo_link{
+        display: block!important;
+    }
+    .header_nav_ul_list{
+        padding-top: 25px!important;
+    }
+    .header_ul_li{
+        padding-bottom: 20px!important;
+    }
+    .header_ul_link{
+        font-size: 20px!important;
+    }
+    .header_social_link img {
+        width: 45px!important;
+        height: 35px!important;
+    }
+    .footer_social_link img {
+        width: 45px!important;
+        height: 35px!important;
+    }
+    .header_social_links_wrapper{
+        width: 240px!important;
+    }
+    .footer_social_links_wrapper{
+        width: 240px!important;
+        margin-top: 25px!important;
+    }
+    .mobile_header_logo_link img {
+        width: 77px!important;
+        height: 55px!important;
+    }
+    .header_logo_link img {
+        width: 77px!important;
+        height: 55px!important;
+    }
+    .mobile_version_close .material-icons {
+        font-size: 44px!important;
+    }
+  .mobile_version_header_btn_wrapper {
+        padding: 25px 15px!important;
+    }
+    .header{
+        padding: 15px 20px!important;
+    }
+    ::-webkit-scrollbar {
+        width: 6px!important;
+    }
+    .footer_logo_link{
+        font-size: 30px!important;
+        margin-bottom: 30px!important;
+        & img{
+            width: 150px!important;
+        }
+    }
+
+    .roadmap_fan_ape_club_info_box{
+        padding-bottom: 30px!important;
+    }
+    
+}
+
+@media (max-width: 580px){
+    .top_wrapper{
+        max-width: unset!important;
+        width: 90%!important;
+    }
+    .top_info_box_wrapper{
+        max-width: unset!important;
+        width: 90%!important;
+    }
+}
+
+
+@media (min-width: 401px) and (max-width: 420px){
+    .top_img3, .top_img4{
+        top: 106px!important;
+    }
+    .top_img2{
+        right: -7px!important;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 400px){
+    .top_img3, .top_img4{
+        top: 116px!important;
+    }
+    .top_img2{
+        right: -7px!important;
+    }
+}
+
+// @media (min-width: 346px) and (max-width: 375px){
+//     .top_img3, .top_img4{
+//         top: 95px!important;
+//     }
+//     .top_img2{
+//         right: -12px!important;
+//         top: 146px!important;
+//     }
+//     .top_main_images_wrapper{
+//         padding-top: 75px!important;
+//     }
+// }
+
+
+// @media (min-width: 336px) and (max-width: 345px){
+//     .top_img3, .top_img4{
+//         top: 100px!important;
+//     }
+//     .top_img2{
+//         right: -13px!important;
+//         top: 146px!important;
+//     }
+//     .top_main_images_wrapper{
+//         padding-top: 75px!important;
+//     }
+// }
+
+@media (max-width: 375px){
+    .top_img3{
+        display: none!important;
+    }
+    .top_img4{
+        display: none!important;
+    }
+    .top_img2{
+        display: none!important;
+    }
+    .top_main_images_wrapper{
+        padding-top: 40px!important;
+    }
+    .top_btn{
+        transform: translate(-115px, 90px)!important;
+    }
+    .top_main_img{
+        height: unset!important;
+    }
+}
+
+@media (max-width: 470px){
+    .top_info_box_wrapper{
+        padding: 0.875rem 0!important;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px){
+    .top_info_box_text{
+        font-size: 14px!important;
+    }
+    .top_info_box_num{
+        font-size: 30px!important;
+    }
+    .top_btn{
+        font-size: 20px!important;
+    }
+    .faqs_item_title{
+        font-size: 18px!important;
+    }
+}
+
+@media  (max-width: 375px){
+    .top_info_box_text{
+        font-size: 12px!important;
+    }
+    .top_info_box_num{
+        font-size: 25px!important;
+    }
+    .top_btn{
+        font-size: 16px!important;
+    }
+    .faqs_item_title{
+        font-size: 16px!important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .swiper-slide{
+        width: 250px!important;
+        height: 250px!important;
+    }
+}
+
+@media  (max-width: 768px){
+    .swiper-slide{
+        width: 200px!important;
+        height: 200px!important;
+         border-radius: 30px!important;
+    }
+    .development_roadmap_item{
+        padding: 25px 10px!important;
+    }
+}
+
+
+
+
+
+@media (max-width: 470px){
+    .fan_ape_club_slider_pictures_wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1220px){
+    .about_fan_ape_club_wrapper{
+        width: 90%!important;
+        max-width: unset!important;
+    }
+    .roadmap_fan_ape_club_wrapper{
+        width: 90%!important;
+        max-width: unset!important;   
+    }
+    .development_roadmap_wrapper{
+        width: 90%!important;
+        max-width: unset!important;   
+    }
+    .development_roadmap_item_title{
+        width: unset!important;   
+    }
+    .faqs_wrapper{
+        width: 90%!important;
+        max-width: unset!important; 
+    }
+    .team_wrapper{
+        width: 90%!important;
+        max-width: unset!important; 
+    }
+}
+
+@media (min-width: 471px) and (max-width: 768px){
+  .about_fan_ape_club_info{
+      font-size: 22px!important;
+  }
+  .about_fan_ape_club_title{
+    font-size: 45px!important;
+  }
+  .development_roadmap_item_info{
+    font-size: 20px!important;
+  }
+ .faqs_item_title{
+    font-size: 22px!important;  
+  }
+  .faqs_item_info{
+    font-size: 20px!important;  
+  }
+  .faqs_item{
+    border-radius: 20px!important;
+ }
+ .team_person_position{
+     font-size: 22px!important;
+ }
+ .team_person_name{
+     font-size: 25px!important;
+ }
+}
+
+@media (min-width: 426px) and (max-width: 470px){
+    .team_person_img{
+        border-radius: 20px!important;
+    }
+    .team_person_position{
+        font-size: 20px!important;
+    }
+    .team_person_name{
+        font-size: 22px!important;
+    }
+    .faqs_item{
+        border-radius: 15px!important;
+    }
+    .faqs_item_info{
+        font-size: 16px!important;  
+      }
+    .about_fan_ape_club_info{
+        font-size: 20px!important;
+    }
+    .faqs_item_title{
+        font-size: 20px!important;
+    }
+    .development_roadmap_item_info{
+        font-size: 18px!important;
+      }
+    .about_fan_ape_club_title{
+      font-size: 40px!important;
+    }
+    .development_roadmap_info1{
+        font-size: 20px!important;
+        line-height: unset!important;
+    }
+    .development_roadmap_item_title{
+        font-size: 22px!important;
+    }
+    
+      .roadmap_fan_ape_club_info_box_title{
+        font-size: 22px!important;
+    }
+    .roadmap_fan_ape_club_info_box_text{
+        font-size: 20px!important;
+    }
+    .roadmap_fan_ape_club_info_box{
+        padding-left: 30px!important;
+    
+    }
+    .roadmap_fan_ape_club_info_box{
+        padding-bottom: 50px!important;
+    }
+  }
+
+  @media (min-width: 376px) and (max-width: 425px){
+    .about_fan_ape_club_info{
+        font-size: 18px!important;
+    }
+    .about_fan_ape_club_title{
+      font-size: 35px!important;
+    }
+    .faqs_item_info{
+        font-size: 14px!important;  
+        line-height: unset!important; 
+      }
+  }
+
+  @media  (max-width: 375px){
+    .about_fan_ape_club_info{
+        font-size: 16px!important;
+    }
+    .about_fan_ape_club_title{
+      font-size: 30px!important;
+    }
+    .faqs_item_info{
+        font-size: 14px!important;  
+        line-height: unset!important;  
+      }
+  }
+
+  @media (min-width: 471px) and (max-width: 1220px){
+      .roadmap_fan_ape_club_info_box{
+          padding-bottom: 70px!important;
+      }
+  }
+
+
+  @media (max-width: 1024px){
+      .development_roadmap_item{
+          flex-wrap: wrap;
+      }
+      .development_roadmap_item_info{
+          max-width: unset!important;
+          text-align: unset!important;
+      }
+      .development_roadmap_item_title{
+          margin-bottom: 25px;
+      }
+  }
+
+  @media (min-width: 471px) and (max-width: 1160px){
+      .team_persons_info_wrapper{
+          flex-wrap: wrap;
+      }
+      .team_person_info{
+          width: 48%!important;
+          margin-bottom: 25px!important;
+      }
+      .team_person_img{
+          width: 100%!important;
+          height: 100%!important;
+      }
+  }
+
+@media (min-width: 769px) and (max-width: 1160px){
+    .team_person_img{
+        border-radius: 50px!important;
+    }
+}
+ 
+@media (min-width: 471px) and (max-width: 768px){
+    .team_person_img{
+        border-radius: 30px!important;
+    }
+}
+ 
+
+  @media  (max-width: 470px){
+    .team_persons_info_wrapper{
+        flex-wrap: wrap;
+    }
+    .team_person_info{
+        width: 100%!important;
+        margin-bottom: 25px!important;
+    }
+    
+}
+
+.hamburger-menu.open{
+    transform: rotate(-180deg);
+    transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+
+}
+
